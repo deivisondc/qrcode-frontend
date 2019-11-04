@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.container label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #111111;
+}
+
+.container input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.thumbnail-container button {
+  border: 0px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url('https://image.flaticon.com/icons/svg/0/191.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+label#thumbnail {
+  border: 1px dashed #111111;
+  background-size: cover;
+  cursor: pointer;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+label#thumbnail input {
+  display: none;
+}
+
+label#thumbnail.has-thumbnail {
+  border: 0;
+}
+
+label#thumbnail.has-thumbnail img {
+  display: none;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.action-container button {
+  margin: 5px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cancel {
+  background-color: tomato;
+}
+
+.confirm {
+  background-color: yellowgreen;
+}
